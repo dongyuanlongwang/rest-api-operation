@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="15 seconds" debug="false">
+
+	<property name="CONSOLE_LOG_PATTERN" value="%-4relative [%thread] %-5level %logger{35} - %msg %n"/>
+
+	<logger name="rui" level="DEBUG"/>
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE"/>
+	</root>
+</configuration>
+
+
